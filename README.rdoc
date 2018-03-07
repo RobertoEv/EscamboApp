@@ -1,3 +1,10 @@
 == README
 
 WIP
+
+Ruby Version - 2.3.6
+Rails Version - 4.2.5
+
+Database Migration and Start Server
+rake db:create, db:migrate
+foreman start
