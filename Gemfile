@@ -54,7 +54,8 @@ group :development do
   # Better error page for Rack apps
   gem "better_errors"
   gem "binding_of_caller"
-
+  # Generate Entity-Relationship Diagrams for Rails application. To run bundle exec erd
+  gem 'rails-erd', require: false
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
