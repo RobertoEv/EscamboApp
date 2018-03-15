@@ -7,7 +7,9 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Backoffice - EscamboApp</a>
+      <%= link_to  backoffice_dashboard_path, class: "navbar-brand" do %>
+        Backoffice - EscamboApp
+      <% end %>
   </div>
   <ul class="nav navbar-top-links navbar-right">
     <li class="dropdown">
@@ -32,7 +34,14 @@
       <div class="sidebar-nav navbar-collapse">
           <ul class="nav" id="side-menu">
               <li>
-                  <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                  <%= link_to  backoffice_dashboard_path do %>
+                      <i class="fa fa-dashboard fa-fw"></i> Painel
+                  <% end %>
+              </li>
+              <li>
+                <%= link_to  backoffice_categories_index_path do %>
+                    <i class="fa fa-th-list fa-fw"></i> Categorias
+                <% end %>
               </li>
           </ul>
       </div>
