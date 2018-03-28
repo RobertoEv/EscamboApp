@@ -38,6 +38,8 @@ gem 'rails-assets-bootstrap', '3.3.7', source: 'https://rails-assets.org'
 gem 'bootstrap_sb_admin_base_v2'
 # Notifications - NotifyJS
 gem 'rails-assets-notifyjs', source: 'https://rails-assets.org'
+# A library for generating fake data such as names, addresses, and phone numbers.
+gem 'faker'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
