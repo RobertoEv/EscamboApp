@@ -8,9 +8,10 @@ Rails.application.routes.draw do
   namespace :backoffice do
     resources :categories, except: [:show, :destroy]
     get 'dashboard', to: 'dashboard#index'
+    get 'admins/index'
   end
 
-  devise_for :admins
+  devise_for :admins, :skip => [:registrations]
   devise_for :members
   root 'site/home#index'
 
