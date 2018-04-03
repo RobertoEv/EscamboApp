@@ -25,9 +25,12 @@ end
 puts "Cadastrando as CATEGORIAS... [OK]"
 puts "Cadastrando o ADMINISTRADOR PRINCIPAL..."
 
-  Admin.create!(email: "admin@admin.com", 
-                          password: "123456", 
-                          password_confirmation: "123456")
+  Admin.create!(
+    name: "Administrador Principal",
+    email: "admin@admin.com",
+    password: "123456",
+    password_confirmation: "123456"
+  )
 
 puts "Cadastrando o ADMINISTRADOR PRINCIPAL... [OK]"
 
