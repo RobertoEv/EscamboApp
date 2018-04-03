@@ -6,18 +6,26 @@ Ruby Version - 2.3.6
 Rails Version - 4.2.5
 
 # Install Graphviz
+
 % brew install graphviz           # Homebrew on Mac OS X
+
 % sudo port install graphviz      # Macports on Mac OS X
+
 % sudo aptitude install graphviz  # Debian and Ubuntu
 
+
 # Bundle Install
+
 bundle install
 
 # Install foreman
+
 gem install foreman
 
 # Rake tasks
+
 rake db:create db:migrate db:seed utils:generate_admins
 
 # Start Server
+
 foreman start
