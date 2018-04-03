@@ -29,7 +29,8 @@ puts "Cadastrando o ADMINISTRADOR PRINCIPAL..."
     name: "Administrador Principal",
     email: "admin@admin.com",
     password: "123456",
-    password_confirmation: "123456"
+    password_confirmation: "123456",
+    role: 0
   )
 
 puts "Cadastrando o ADMINISTRADOR PRINCIPAL... [OK]"
