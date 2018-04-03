@@ -26,14 +26,14 @@
                         <td><%= admin.id %></td>
                         <td><%= admin.email %></td>
                         <td style="width: 150px">
-                            <%= link_to  edit_backoffice_admin_path(admin.id), 
+                            <%= link_to  edit_backoffice_admin_path(admin.id),
                             class: "btn btn-primary btn-circle" do %>
                                 <i class="fa fa-edit"></i>
                             <% end %>
 
-                            <%= link_to backoffice_admin_path(admin.id), 
+                            <%= link_to backoffice_admin_path(admin.id),
                             method: :delete, class: "btn btn-danger btn-circle",
-                            data: {confirm: "Você deseja realmente excluir #{admin.email}?"}, 
+                            data: {confirm: "Você deseja realmente excluir <b>#{admin.email}</b>?"},
                             disabled: current_admin.id == admin.id do %>
                                 <i class="fa fa-minus"></i>
                             <% end%>
